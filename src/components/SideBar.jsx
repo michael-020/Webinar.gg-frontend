@@ -2,7 +2,7 @@
 export function SideBar ({pfp, logoImg, children}) {
     console.log(children)
 
-    return <div className="h-screen w-[18rem] bg-white dark:bg-zinc-950 shadow-xl overflow-hidden">
+    return <div className="h-[99.2vh] w-[18rem] bg-white dark:bg-zinc-950 shadow-xl overflow-y-hidden">
         <div className="w-[16rem] mx-auto mb-6 flex justify-between">
             <img src="../../public/Screenshot 2024-11-03 at 12.42.11 PM.png"  width="110px" className="rounded-lg cursor-pointer my-4"/>
             <img src={`${pfp}`} width={"32px"} className="cursor-pointer my-4 rounded-lg"/>
@@ -40,6 +40,6 @@ export function SideBar ({pfp, logoImg, children}) {
                     </div>
             ))}
         </div>
-        <div className="h-screen bg-gray-200 dark:bg-gray-500 w-[2px] absolute top-0 left-[18rem]"></div>
+        <div className="h-[99.2vh] bg-gray-200 dark:bg-gray-500 w-[2px] absolute top-0 left-[18rem]"></div>
     </div>
 }

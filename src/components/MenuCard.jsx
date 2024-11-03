@@ -1,7 +1,7 @@
 
 export function MenuCard () {
 
-    return <div className="bg-white dark:bg-zinc-950 w-[18rem] h-[14rem] rounded-lg shadow-[0px_5px_70px_1px_rgba(0,0,0,0.1)] grid grid-cols-2">
+    return <div className="bg-white dark:bg-zinc-950 w-[18rem] h-[14rem] rounded-lg shadow-[0px_5px_70px_1px_rgba(0,0,0,0.1)] grid grid-cols-2 overflow-hidden">
             <div className="self-center">
             <div className="w-12 h-12 bg-green-300 mx-auto rounded-md">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-auto relative top-3">
