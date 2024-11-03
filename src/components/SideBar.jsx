@@ -2,14 +2,14 @@
 export function SideBar ({pfp, logoImg, children}) {
     console.log(children)
 
-    return <div className="h-screen w-[17rem] bg-white shadow-xl">
-        <div className="w-[15rem] mx-auto mt-3 mb-6 flex justify-between">
-            <img src="../../public/Screenshot 2024-11-03 at 12.42.11 PM.png"  width="90px" className="rounded-lg cursor-pointer my-4"/>
-            <img src={`${pfp}`} width={"30px"} className="cursor-pointer my-4 rounded-lg"/>
+    return <div className="h-screen w-[18rem] bg-white dark:bg-zinc-950 shadow-xl overflow-hidden">
+        <div className="w-[16rem] mx-auto mb-6 flex justify-between">
+            <img src="../../public/Screenshot 2024-11-03 at 12.42.11 PM.png"  width="110px" className="rounded-lg cursor-pointer my-4"/>
+            <img src={`${pfp}`} width={"32px"} className="cursor-pointer my-4 rounded-lg"/>
         </div>
        <div className="flex flex-col gap-3 ">
             {children.map((x, index) => (
-                    <div key={index} className="w-[15rem] text-gray-400 text-md ml-4 cursor-pointer flex justify-between hover:bg-gray-100 hover:text-blue-700 p-2 rounded-lg">
+                    <div key={index} className="w-[16rem] text-gray-400 text-md ml-4 cursor-pointer flex justify-between hover:bg-gray-100 hover:text-blue-700 p-2 rounded-lg">
                         <div>{x}</div> 
                         {x === "Home" && <div><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -40,6 +40,6 @@ export function SideBar ({pfp, logoImg, children}) {
                     </div>
             ))}
         </div>
-        <div className="h-screen bg-gray-200 w-[2px] absolute top-0 left-[17rem]"></div>
+        <div className="h-screen bg-gray-200 dark:bg-gray-500 w-[2px] absolute top-0 left-[18rem]"></div>
     </div>
 }
