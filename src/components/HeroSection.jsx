@@ -11,7 +11,7 @@ export function HeroSection() {
         <div className="absolute top-[20%] left-[22rem]">
             <ScheduleCard time={["11.30 AM", "12.30 PM", "1.40 PM", "3.30 PM"]} status={["Live", "Upcomming", "Upcoming", "Upcomming"]} title={["UX Webinar", "My first Webinar", "Important Webinar", "Web Dev Webinar"]} />
         </div>
-        <div className="absolute left-[53rem] top-[20%]">
+        <div className="absolute left-[52.5rem] top-[20%]">
             <MenuCard />
         </div>
     </div>
