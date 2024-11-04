@@ -1,7 +1,7 @@
 export function ScheduleCard({time, status, title}) {
     const total = Array(time.length).fill(0)
     
-    return <div className="w-[29rem] overflow-hidden bg-white dark:bg-zinc-950 h-[24rem] shadow-[0px_5px_70px_1px_rgba(0,0,0,0.1)] rounded-2xl flex flex-col  ">
+    return <div className="sm:w-[33rem] w-[20rem] overflow-hidden bg-white dark:bg-zinc-950 h-[24rem] shadow-[0px_5px_70px_1px_rgba(0,0,0,0.1)] rounded-2xl flex flex-col  ">
         <div className="h-10 bg-gray-100 dark:bg-gray-300 m-4 rounded-lg ">
             {/* Calendar */}    
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mt-2 ml-7">
@@ -25,7 +25,7 @@ export function ScheduleCard({time, status, title}) {
             {total.map((_,i) => (
                 <div key={i}>
                     <div   className="bg-green-300 w-[2px] h-12 mt-5 mb-5"></div>
-                    {i < time.length-1 && <div className="mx-5 h-[2px] w-[26rem] bg-gray-200 absolute left-0 -my-3"> </div>} 
+                    {i < time.length-1 && <div className="mx-5 h-[2px] sm:w-[30.5rem] w-[17rem] bg-gray-200 fixed left-0 -my-3"> </div>} 
                 </div>
             ))}
             </div>

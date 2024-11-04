@@ -1,7 +1,7 @@
 export function ProfileCard({pfp, username, email, phone,location}) {
 
     return <div>
-        <div className="w-[17rem] h-[25rem] bg-white dark:bg-zinc-950 mx-auto mb-6 flex flex-col justify-evenly rounded-xl shadow-lg items-center overflow-hidden">
+        <div className="w-[16rem] h-[25rem] bg-white dark:bg-zinc-950 mx-auto mb-6 flex flex-col justify-evenly rounded-xl shadow-lg items-center overflow-hidden">
             
             <img src={`${pfp}`} width={"125px"} className="cursor-pointer mt-10 rounded-lg"/>
             <div>
